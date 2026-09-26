@@ -79,24 +79,13 @@
 ## 🎯 Sprint 1: [Direção Estratégica](https://github.com/users/YeddaMC/projects/13/views/1)
 
 
-
-* **#1 - 1.1 Coleta de Dados Básicos**  
-  Levantar informações fundamentais da associação: nome oficial, história, localização, número de moradores atendidos e estrutura jurídica.
-
-* **#2 - 1.2 Mapeamento de Serviços e Projetos Colaborativos**  
-  Listar as ações e iniciativas existentes (como feiras de troca, projetos de reciclagem, banco de tempo, horta comunitária ou empréstimo de ferramentas).
-
-* **#3 - 1.3 Mapeamento do Público Atendido**  
-  Identificar quem são os participantes das ações: moradores do bairro, voluntários, comércios parceiros e líderes comunitários.
-
-* **#4 - 1.4 Entrevista com a Liderança**  
-  Conversar com os responsáveis pela associação para entender o que eles definem hoje como Missão, Visão, Valores e Propósito.
-
-* **#5 - 1.5 Redação das Diretrizes Estratégicas**  
-  Escrever de forma clara e organizada os textos de Missão (o que faz), Visão (onde quer chegar), Valores (princípios) e Propósito (causa social).
-
-* **#6 - 1.6 Análise de Coerência**  
-  Avaliar se as ações diárias da associação realmente estão alinhadas com as diretrizes e os princípios da economia colaborativa.
-
-* **#7 - 1.7 Revisão e Publicação**  
-  Unir todas as partes, revisar o texto e publicar o conteúdo final na Wiki do GitHub.
+| Tarefa | Descrição | Evidência |
+| :--- | :--- | :---: |
+| **1.1 Coleta de Dados Básicos** | Levantar informações fundamentais da associação: nome oficial, história, localização, número de moradores atendidos e estrutura jurídica. | [#1](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255600874&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C1) |
+| **1.2 Mapeamento de Serviços e Projetos Colaborativos** | Listar as ações e iniciativas existentes (como feiras de troca, projetos de reciclagem, banco de tempo, horta comunitária ou empréstimo de ferramentas). | [#2](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255601244&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C2) |
+| **1.3 Mapeamento do Público Atendido** | Identificar quem são os participantes das ações: moradores do bairro, voluntários, comércios parceiros e líderes comunitários. | [#3](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255601441&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C3) |
+| **1.4 Entrevista com a Liderança** | Conversar com os responsáveis pela associação para entender o que eles definem hoje como Missão, Visão, Valores e Propósito. | [#4](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255601708&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C4) |
+| **1.5 Redação das Diretrizes Estratégicas** | Escrever de forma clara e organizada os textos de Missão (o que faz), Visão (onde quer chegar), Valores (princípios) e Propósito (causa social). | [#5](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255602045&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C5) |
+| **1.6 Análise de Coerência** | Avaliar se as ações diárias da associação realmente estão alinhadas com as diretrizes e os princípios da economia colaborativa. | [#6](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255602265&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C6) |
+| **1.7 Revisão e Publicação** | Planilha. Unir todas as partes, revisar o texto e publicar. | [#7](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255602564&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C7) |
+ 
