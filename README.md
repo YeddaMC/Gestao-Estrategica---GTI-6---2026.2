@@ -32,7 +32,7 @@
 
 | Fase / Etapa | Link de Acesso | Descrição e Orientações | Link do Andamento |
 | :--- | :---: | :--- | :---: |
-| **1. Direção Estratégica** | [Acessar Etapa 1](#) | Caracterização da organização real escolhida e análise de suas diretrizes: Missão, Visão, Valores, Propósito, Produtos/Serviços e Públicos atendidos. | [Acessar Andamento](#) |
+| **1. Direção Estratégica** | [Acessar Etapa 1](#) | Caracterização da organização real escolhida e análise de suas diretrizes: Missão, Visão, Valores, Propósito, Produtos/Serviços e Públicos atendidos. | [Acessar Andamento](https://github.com/users/YeddaMC/projects/13/views/1) |
 | **2. Diagnóstico Externo** | [Acessar Diagnóstico Externo](#) | Análise do macroambiente e Cinco Forças de Porter. Mapeamento de Oportunidades e Ameaças sustentadas por evidências.<br>`Pontuação Externa = Impacto × Probabilidade` | [Acessar Andamento](#) |
 | **3. Diagnóstico Interno** | [Acessar Diagnóstico Interno](#) | Análise dos recursos e capacidades da organização. Mapeamento de Forças e Fraquezas com evidências.<br>`Pontuação Interna = Importância Estratégica × Intensidade Atual` | [Acessar Andamento](#) |
 | **4. Priorização** | [Acessar Priorização](#) | Seleção dos fatores mais relevantes utilizando a pontuação como apoio, alinhando evidências, diretrizes e viabilidade de ação. | [Acessar Andamento](#) |
