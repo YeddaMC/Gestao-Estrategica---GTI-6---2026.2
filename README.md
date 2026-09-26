@@ -91,4 +91,28 @@ Entendendo a Empresa -
 | **1.5 Redação das Diretrizes Estratégicas** | Escrever de forma clara e organizada os textos de Missão (o que faz), Visão (onde quer chegar), Valores (princípios) e Propósito (causa social). | [#5](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255602045&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C5) |
 | **1.6 Análise de Coerência** | Avaliar se as ações diárias da associação realmente estão alinhadas com as diretrizes e os princípios da economia colaborativa. | [#6](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255602265&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C6) |
 | **1.7 Revisão e Publicação** | Planilha. Unir todas as partes, revisar o texto e publicar. | [#7](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255602564&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C7) |
- 
+
+
+
+ ## 🎯 Sprint 2: [Análise do Ambiente Externo (PEST e Matriz)](https://github.com/users/YeddaMC/projects/13/views/1?utm_source=gemini)
+
+Análise Ambiental -
+
+[questionario](https://github.com/YeddaMC/Gestao-Estrategica---GTI-6---2026.2/wiki/QUESTIONÁRIO-DE-DIAGNÓSTICO-E-ESTRATÉGIA-ORGANIZACIONAL?utm_source=gemini)
+
+| Tarefa | Descrição | Evidência |
+| --- | --- | --- |
+| **2.1 Levantamento de Fatores Políticos e Legais (P)** | Mapear editais abertos (municipais, estaduais, federais ou de fundações) que aceitem projetos da Associação, identificar leis de incentivo fiscal ou políticas públicas locais aplicáveis, e listar exigências burocráticas, licenças, alvarás e obrigações fiscais pendentes ou necessárias. | [#8](https://www.google.com/search?q=https://github.com/users/YeddaMC/projects/13/views/1%253Fpane%253Dissue%2526itemId%253D255602800%2526issue%253DYeddaMC%25257CGestao-Estrategica---GTI-6---2026.2%25257C8&utm_source=gemini) |
+| **2.2 Levantamento de Fatores Econômicos (E)** | Mapear potenciais doadores (empresas locais, patrocinadores corporativos, doações de moradores) e avaliar o impacto do aumento da inflação e do preço de insumos nos projetos da Associação (ex.: custo de sementes/adubos para a horta, alimentos para a cozinha, ferramentas). | [#9](https://www.google.com/search?q=https://github.com/users/YeddaMC/projects/13/views/1%253Fpane%253Dissue%2526itemId%253D255603000%2526issue%253DYeddaMC%25257CGestao-Estrategica---GTI-6---2026.2%25257C9&utm_source=gemini) |
+| **2.3 Levantamento de Fatores Sociais e Culturais (S)** | Mapear novas demandas e necessidades da comunidade que a Associação ainda não atende, e identificar o nível de engajamento da população local e se há desinteresse ou esvaziamento das atividades. | [#10](https://www.google.com/search?q=https://github.com/users/YeddaMC/projects/13/views/1%253Fpane%253Dissue%2526itemId%253D255603200%2526issue%253DYeddaMC%25257CGestao-Estrategica---GTI-6---2026.2%25257C10&utm_source=gemini) |
+| **2.4 Levantamento de Fatores Tecnológicos (T)** | Mapear ferramentas digitais de baixo custo ou gratuitas que podem ser adotadas (ex.: WhatsApp Business, redes sociais, sistemas de controle financeiro/planilhas) e identificar processos manuais internos que causam perda de tempo, erros ou desorganização. | [#11](https://www.google.com/search?q=https://github.com/users/YeddaMC/projects/13/views/1%253Fpane%253Dissue%2526itemId%253D255603400%2526issue%253DYeddaMC%25257CGestao-Estrategica---GTI-6---2026.2%25257C11&utm_source=gemini) |
+| **2.5 Matriz de Impacto e Probabilidade** | Para cada ponto levantado (oportunidade ou ameaça), classificar a probabilidade de acontecer (1 a 5) e o tamanho do impacto na Associação (1 a 5). | [#12](https://www.google.com/search?q=https://github.com/users/YeddaMC/projects/13/views/1%253Fpane%253Dissue%2526itemId%253D255603600%2526issue%253DYeddaMC%25257CGestao-Estrategica---GTI-6---2026.2%25257C12&utm_source=gemini) |
+
+---
+
+**Observação:**
+
+?????? se a probabilidade for **5 (fato concretizado-levantamento|mapeamento)**, então o impacto é medido pela magnitude do efeito desse fato sobre a organização:
+
+* Se for um edital favorável $\rightarrow$ Oportunidade de alto impacto.
+* Se for uma exigência legal restritiva $\rightarrow$ Ameaça de alto impacto.
