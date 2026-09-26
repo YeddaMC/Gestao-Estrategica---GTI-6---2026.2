@@ -44,3 +44,59 @@
 ---
 
 > **Encadeamento do Trabalho:** `Direção` → `Diagnóstico` → `Priorização` → `SWOT/TOWS` → `Estratégias` → `Objetivos e Indicadores` → `Planos de Ação` → `Monitoramento e Revisão`
+
+
+# Backlog Geral do Projeto (Visão Macro)
+
+1. Estruturação Inicial e Documentação do Repositório (Sprint 0)
+2. Direção Estratégica da Associação (Sprint 1)
+3. Diagnóstico Externo - Macroambiente e Setor
+4. Diagnóstico Interno - Recursos e Capacidades
+5. Priorização dos Fatores Estratégicos
+6. Matriz SWOT/TOWS e Formulação de Estratégias
+7. Definição de Objetivos Estratégicos e Indicadores (KPIs)
+8. Elaboração dos Planos de Ação (5W2H)
+9. Sistema de Monitoramento, Revisão e Consolidação Final
+
+---
+
+## 🛠️ Sprint 0: Organização da Documentação e Repositório
+
+* **0.1 Criação e Configuração da Wiki no GitHub**  
+  Estruturar o ambiente de documentação com páginas padrão e padrão visual do projeto.
+
+* **0.2 Organização do Cronograma e Quadro de Acompanhamento**  
+  Inserir a tabela de entregas, datas do AVA/IFPR e links de acesso rápido no repositório.
+
+* **0.3 Cadastro da Equipe e Definição de Papéis**  
+  Registrar os integrantes em ordem alfabética (Mary e Yedda) com seus respectivos repositórios e responsabilidades.
+
+* **0.4 Padronização dos Modelos de Arquivos**  
+  Criar e salvar os gabaritos para planilhas, relatórios e apresentações exigidos na disciplina.
+
+---
+
+## 🎯 Sprint 1: [Direção Estratégica](https://github.com/users/YeddaMC/projects/13/views/1)
+
+
+
+* **#1 - 1.1 Coleta de Dados Básicos**  
+  Levantar informações fundamentais da associação: nome oficial, história, localização, número de moradores atendidos e estrutura jurídica.
+
+* **#2 - 1.2 Mapeamento de Serviços e Projetos Colaborativos**  
+  Listar as ações e iniciativas existentes (como feiras de troca, projetos de reciclagem, banco de tempo, horta comunitária ou empréstimo de ferramentas).
+
+* **#3 - 1.3 Mapeamento do Público Atendido**  
+  Identificar quem são os participantes das ações: moradores do bairro, voluntários, comércios parceiros e líderes comunitários.
+
+* **#4 - 1.4 Entrevista com a Liderança**  
+  Conversar com os responsáveis pela associação para entender o que eles definem hoje como Missão, Visão, Valores e Propósito.
+
+* **#5 - 1.5 Redação das Diretrizes Estratégicas**  
+  Escrever de forma clara e organizada os textos de Missão (o que faz), Visão (onde quer chegar), Valores (princípios) e Propósito (causa social).
+
+* **#6 - 1.6 Análise de Coerência**  
+  Avaliar se as ações diárias da associação realmente estão alinhadas com as diretrizes e os princípios da economia colaborativa.
+
+* **#7 - 1.7 Revisão e Publicação**  
+  Unir todas as partes, revisar o texto e publicar o conteúdo final na Wiki do GitHub.
