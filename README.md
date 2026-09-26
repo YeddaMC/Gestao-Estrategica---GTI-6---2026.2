@@ -78,6 +78,9 @@
 
 ## 🎯 Sprint 1: [Direção Estratégica](https://github.com/users/YeddaMC/projects/13/views/1)
 
+Entendendo a Empresa - 
+[questionario](https://github.com/YeddaMC/Gestao-Estrategica---GTI-6---2026.2/wiki/QUESTION%C3%81RIO-DE-DIAGN%C3%93STICO-E-ESTRAT%C3%89GIA-ORGANIZACIONAL)
+
 
 | Tarefa | Descrição | Evidência |
 | :--- | :--- | :---: |
