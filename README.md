@@ -22,7 +22,7 @@
 
 | Entrega | Link das Instruções | Link do Arquivo | Status |
 | :--- | :---: | :---: | :---: |
-| **1. Planilha de Planejamento Estratégico** | [Instruções da Planilha](#) | [📦 Acessar Planilha](https://github.com/YeddaMC/Gestao-Estrategica---GTI-6---2026.2/wiki/PLANILHA-_-ADAPTADA-DO-MODELO-EXCEL-DISPONIBILIZADO-NO-AVA--PELOS-PROFESSORES) | 🔗 |
+| **1. Planilha de Planejamento Estratégico** | [questionario](https://github.com/YeddaMC/Gestao-Estrategica---GTI-6---2026.2/wiki/QUESTION%C3%81RIO-DE-DIAGN%C3%93STICO-E-ESTRAT%C3%89GIA-ORGANIZACIONAL)  | [📦 Acessar Planilha](https://github.com/YeddaMC/Gestao-Estrategica---GTI-6---2026.2/wiki/PLANILHA-_-ADAPTADA-DO-MODELO-EXCEL-DISPONIBILIZADO-NO-AVA--PELOS-PROFESSORES) | 🔗 |
 | **2. Relatório Final (Modelo)** | [Modelo do Relatório](#) | [📦 Acessar Relatório](#) | 🔗 |
 | **3. Apresentação (Slides)** | [Guia de Apresentação](#) | [📦 Acessar Slides](#) | 🔗 |
 
