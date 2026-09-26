@@ -100,15 +100,19 @@ Análise Ambiental -
 
 [questionario](https://github.com/YeddaMC/Gestao-Estrategica---GTI-6---2026.2/wiki/QUESTIONÁRIO-DE-DIAGNÓSTICO-E-ESTRATÉGIA-ORGANIZACIONAL?utm_source=gemini)
 
-| Tarefa | Descrição | Evidência |
-| --- | --- | --- |
-| **2.1 Levantamento de Fatores Políticos e Legais (P)** | Mapear editais abertos (municipais, estaduais, federais ou de fundações) que aceitem projetos da Associação, identificar leis de incentivo fiscal ou políticas públicas locais aplicáveis, e listar exigências burocráticas, licenças, alvarás e obrigações fiscais pendentes ou necessárias. | [#8](https://www.google.com/search?q=https://github.com/users/YeddaMC/projects/13/views/1%253Fpane%253Dissue%2526itemId%253D255602800%2526issue%253DYeddaMC%25257CGestao-Estrategica---GTI-6---2026.2%25257C8&utm_source=gemini) |
-| **2.2 Levantamento de Fatores Econômicos (E)** | Mapear potenciais doadores (empresas locais, patrocinadores corporativos, doações de moradores) e avaliar o impacto do aumento da inflação e do preço de insumos nos projetos da Associação (ex.: custo de sementes/adubos para a horta, alimentos para a cozinha, ferramentas). | [#9](https://www.google.com/search?q=https://github.com/users/YeddaMC/projects/13/views/1%253Fpane%253Dissue%2526itemId%253D255603000%2526issue%253DYeddaMC%25257CGestao-Estrategica---GTI-6---2026.2%25257C9&utm_source=gemini) |
-| **2.3 Levantamento de Fatores Sociais e Culturais (S)** | Mapear novas demandas e necessidades da comunidade que a Associação ainda não atende, e identificar o nível de engajamento da população local e se há desinteresse ou esvaziamento das atividades. | [#10](https://www.google.com/search?q=https://github.com/users/YeddaMC/projects/13/views/1%253Fpane%253Dissue%2526itemId%253D255603200%2526issue%253DYeddaMC%25257CGestao-Estrategica---GTI-6---2026.2%25257C10&utm_source=gemini) |
-| **2.4 Levantamento de Fatores Tecnológicos (T)** | Mapear ferramentas digitais de baixo custo ou gratuitas que podem ser adotadas (ex.: WhatsApp Business, redes sociais, sistemas de controle financeiro/planilhas) e identificar processos manuais internos que causam perda de tempo, erros ou desorganização. | [#11](https://www.google.com/search?q=https://github.com/users/YeddaMC/projects/13/views/1%253Fpane%253Dissue%2526itemId%253D255603400%2526issue%253DYeddaMC%25257CGestao-Estrategica---GTI-6---2026.2%25257C11&utm_source=gemini) |
-| **2.5 Matriz de Impacto e Probabilidade** | Para cada ponto levantado (oportunidade ou ameaça), classificar a probabilidade de acontecer (1 a 5) e o tamanho do impacto na Associação (1 a 5). | [#12](https://www.google.com/search?q=https://github.com/users/YeddaMC/projects/13/views/1%253Fpane%253Dissue%2526itemId%253D255603600%2526issue%253DYeddaMC%25257CGestao-Estrategica---GTI-6---2026.2%25257C12&utm_source=gemini) |
+Aqui está o trecho atualizado do backlog incluindo a linha da **Planilha** com a estrutura completa e o padrão de links das tarefas anteriores:
 
----
+
+| Tarefa | Descrição | Evidência |
+| :--- | :--- | :---: |
+| **2.1 Levantamento de Fatores Políticos e Legais (P)** | Listar 2 ou 3 fatos conhecidos: 1 edital/chamada pública aberta ou recente, 1 lei de incentivo básica (ex.: Rouanet ou local) e 1 exigência burocrática simples (ex.: alvará/CNPJ). | [#8](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255602800&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C8) |
+| **2.2 Levantamento de Fatores Econômicos (E)** | Identificar 2 pontos práticos: fontes de doação conhecidas (moradores/comércio local) e o impacto direto da alta de preços em 1 ou 2 insumos básicos da associação. | [#9](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255603000&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C9) |
+| **2.3 Levantamento de Fatores Sociais e Culturais (S)** | Descrever brevemente 2 aspectos comunitários: 1 principal demanda dos moradores e o nível atual de participação/engajamento nas atividades. | [#10](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255603200&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C10) |
+| **2.4 Levantamento de Fatores Tecnológicos (T)** | Mapear 2 ferramentas já usadas ou gratuitas (ex.: WhatsApp Business, redes sociais) e 1 processo que pode ser otimizado. | [#11](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255603400&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C11) |
+| **2.5 Matriz de Impacto e Probabilidade** | Montar uma tabela atribuindo nota 5 para fatos concretos e notas de 1 a 4 para tendências, com o impacto de 1 a 5 para cada item listado. | [#12](https://github.com/users/YeddaMC/projects/13/views/1?pane=issue&itemId=255603600&issue=YeddaMC%7CGestao-Estrategica---GTI-6---2026.2%7C12) |
+| **2.6 Planilha da Matriz PEST e Priorização** | Consolidar em planilha o levantamento dos fatores PEST, pontuações de impacto/probabilidade e matriz final da Sprint 2. | [Planilha](https://github.com/YeddaMC/Gestao-Estrategica---GTI-6---2026.2/wiki) |
+
+
 
 **Observação:**
 
