@@ -10,7 +10,7 @@
 
 | Data | ID / Nome da Atividade | Tipo | Link das Instruções | Link / Local de Entrega | Data de Entrega | Status |
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
-| 27/08/2026 | Estudo de Caso Crítico – "Coerência ou Marketing?" | 🚴 Atividade | [Wiki GitHub](https://github.com/YeddaMC/Gestao-Estrategica---GTI-6---2026.2/wiki/Conhecendo-as-organizações:-estudo-de-caso-crítico-–-“coerência-ou-marketing?”) | [📦 --](#) | 26/09/2026 | ✅ |
+| 27/08/2026 | Estudo de Caso Crítico – "Coerência ou Marketing?" | 🚴 Atividade | [Orientaçoes](https://github.com/YeddaMC/Gestao-Estrategica---GTI-6---2026.2/wiki/Conhecendo-as-organizações:-estudo-de-caso-crítico-–-“coerência-ou-marketing?”) | [📦 --](#) | 26/09/2026 | ✅ |
 | 08/09/2026 | Verificação de Aprendizagem (Aula 03 - Aspectos Econômicos e Políticos) | 📄 Prova | [--](#) | [📦--](#) | 15/09/2026 | ✅ |
 | 03/08/2026 | Atividade Extraclasse: Elaboração do Planejamento Estratégico | 🏋️ Atividade | [--](#) | [📦--](#) | 10/11/2026 | ⏳ |
 | 03/11/2026 | Avaliação Teórica Escrita | 📄 Prova | [Conteúdo Programático](#) | 🏫 Presencial em Aula | 03/11/2026 | 📅 |
