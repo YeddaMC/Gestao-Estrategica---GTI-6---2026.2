@@ -47,23 +47,23 @@
 
 ---
 
-
 # Backlog Geral do Projeto - Visão Geral das entregas, atividades e avaliações da disciplina.
 
-| Sprint / Evento | Descrição | Semana | Janela Temporal (Início e Fim) |
+| Sprint / Evento | Descrição | Semana | Janela Temporal |
 | :--- | :--- | :---: | :---: |
-| **Sprint 0** | Estruturação Inicial e Documentação do Repositório | 1 | 15/09/2026 a 21/09/2026 |
-| **Sprint 1** | Direção Estratégica da Associação | 2 | 22/09/2026 a 28/09/2026 |
-| **Sprint 2** | Análise do Ambiente Externo - PEST e Matriz | 3 | 29/09/2026 a 05/10/2026 |
-| **Sprint 3** | Diagnóstico Interno - Recursos, Forças e Fraquezas | 4 | 06/10/2026 a 12/10/2026 |
-| **Sprint 4** | Priorização dos Fatores Estratégicos | 5 | 13/10/2026 a 19/10/2026 |
-| **Sprint 5** | Matriz SWOT/TOWS e Formulação de Estratégias | 6 | 20/10/2026 a 26/10/2026 |
-| **Sprint 6** | Objetivos Estratégicos e Indicadores - KPIs | 7 | 27/10/2026 a 02/11/2026 |
+| **Sprint 0** | Estruturação Inicial e Documentação do Repositório | 1 | 15/09/2026 a 22/09/2026 * |
+| **Sprint 1** | Direção Estratégica da Associação | 2 | 22/09/2026 a 29/09/2026 * |
+| **Sprint 2** | Análise do Ambiente Externo - PEST e Matriz | 3 | 29/09/2026 a 06/10/2026 |
+| **Sprint 3** | Diagnóstico Interno - Recursos, Forças e Fraquezas | 4 | 06/10/2026 a 13/10/2026 |
+| **Sprint 4** | Priorização dos Fatores Estratégicos | 5 | 13/10/2026 a 20/10/2026 |
+| **Sprint 5** | Matriz SWOT/TOWS e Formulação de Estratégias | 6 | 20/10/2026 a 27/10/2026 |
+| **Sprint 6** | Objetivos Estratégicos e Indicadores - KPIs | 7 | 27/10/2026 a 03/11/2026 |
 | ⚠️ **7** | **Avaliação Teórica Escrita (Presencial em Aula)** | 8 | **03/11/2026** |
-| **Sprint 7** | Planos de Ação - 5W2H | 8 | 03/11/2026 a 09/11/2026 |
+| **Sprint 7** | Planos de Ação - 5W2H | 8 | 03/11/2026 a 10/11/2026 |
 | ⚠️ **8** | **Elaboração do Planejamento Estratégico (Atividade Extraclasse)** | 9 | **Prazo Final: 10/11/2026** |
-| **Sprint 8** | Consolidação Final e Apresentação | 9 | 10/11/2026 a 16/11/2026 |
+| **Sprint 8** | Consolidação Final e Apresentação | 9 | 10/11/2026 a 17/11/2026 |
 | ⚠️ **9-AVALIAÇÃO FINAL** | **Apresentação do Planejamento Estratégico (Exposição Oral 15 min)** | 9-10 | **10/11/2026 a 24/11/2026** |
+
 ---
 
 ## 🛠️ Sprint 0: Organização da Documentação e Repositório
