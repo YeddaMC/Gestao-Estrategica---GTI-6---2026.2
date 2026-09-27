@@ -47,7 +47,7 @@
 
 ---
 
-# Backlog Geral do Projeto - Visão Geral das entregas, atividades e avaliações da disciplina.
+# Backlog Geral do Projeto + Visão Geral das entregas, atividades e avaliações da disciplina.
 
 | Sprint / Evento | Descrição | Semana | Janela Temporal |
 | :--- | :--- | :---: | :---: |
