@@ -50,7 +50,7 @@
 
 # Backlog Geral do Projeto - Visão Geral das entregas, atividades e avaliações da disciplina.
 
-| Sprint / Evento | Nome da Sprint / Atividade | Semana | Janela Temporal (Início e Fim) |
+| Sprint / Evento | Descrição | Semana | Janela Temporal (Início e Fim) |
 | :--- | :--- | :---: | :---: |
 | **Sprint 0** | Estruturação Inicial e Documentação do Repositório | 1 | 15/09/2026 a 21/09/2026 |
 | **Sprint 1** | Direção Estratégica da Associação | 2 | 22/09/2026 a 28/09/2026 |
