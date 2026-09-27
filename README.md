@@ -74,11 +74,11 @@
 * **0.2 Organização do Cronograma e Quadro de Acompanhamento**  
   Inserir a tabela de entregas, datas do AVA/IFPR e links de acesso rápido no repositório.
 
-* **0.3 Cadastro da Equipe e Definição de Papéis**  
-  Registrar os integrantes em ordem alfabética (Mary e Yedda) com seus respectivos repositórios e responsabilidades.
+* **0.3 Organização da Equipe e Definição de Atribuições**  
+  Registrar com seus respectivos repositórios e responsabilidades.
 
 * **0.4 Padronização dos Modelos de Arquivos**  
-  Criar e salvar os gabaritos para planilhas, relatórios e apresentações exigidos na disciplina.
+  Criar e/ou salvar cópias editáveis dos modelos para planilha, apresentações e demais artefatos exigidos na disciplina.
 
 ---
 
