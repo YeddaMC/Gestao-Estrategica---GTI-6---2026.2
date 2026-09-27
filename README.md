@@ -45,19 +45,25 @@
 
 > **Encadeamento do Trabalho:** `Direção` → `Diagnóstico` → `Priorização` → `SWOT/TOWS` → `Estratégias` → `Objetivos e Indicadores` → `Planos de Ação` → `Monitoramento e Revisão`
 
+---
 
-# Backlog Geral do Projeto (Visão Macro)
 
-1. Estruturação Inicial e Documentação do Repositório (Sprint 0)
-2. Direção Estratégica da Associação (Sprint 1)
-3. Diagnóstico Externo - Macroambiente e Setor
-4. Diagnóstico Interno - Recursos e Capacidades
-5. Priorização dos Fatores Estratégicos
-6. Matriz SWOT/TOWS e Formulação de Estratégias
-7. Definição de Objetivos Estratégicos e Indicadores (KPIs)
-8. Elaboração dos Planos de Ação (5W2H)
-9. Sistema de Monitoramento, Revisão e Consolidação Final
+# Backlog Geral do Projeto - Visão Geral das entregas, atividades e avaliações da disciplina.
 
+| Sprint / Evento | Nome da Sprint / Atividade | Semana | Janela Temporal (Início e Fim) |
+| :--- | :--- | :---: | :---: |
+| **Sprint 0** | Estruturação Inicial e Documentação do Repositório | 1 | 15/09/2026 a 21/09/2026 |
+| **Sprint 1** | Direção Estratégica da Associação | 2 | 22/09/2026 a 28/09/2026 |
+| **Sprint 2** | Análise do Ambiente Externo - PEST e Matriz | 3 | 29/09/2026 a 05/10/2026 |
+| **Sprint 3** | Diagnóstico Interno - Recursos, Forças e Fraquezas | 4 | 06/10/2026 a 12/10/2026 |
+| **Sprint 4** | Priorização dos Fatores Estratégicos | 5 | 13/10/2026 a 19/10/2026 |
+| **Sprint 5** | Matriz SWOT/TOWS e Formulação de Estratégias | 6 | 20/10/2026 a 26/10/2026 |
+| **Sprint 6** | Objetivos Estratégicos e Indicadores - KPIs | 7 | 27/10/2026 a 02/11/2026 |
+| ⚠️ **7** | **Avaliação Teórica Escrita (Presencial em Aula)** | 8 | **03/11/2026** |
+| **Sprint 7** | Planos de Ação - 5W2H | 8 | 03/11/2026 a 09/11/2026 |
+| ⚠️ **8** | **Elaboração do Planejamento Estratégico (Atividade Extraclasse)** | 9 | **Prazo Final: 10/11/2026** |
+| **Sprint 8** | Consolidação Final e Apresentação | 9 | 10/11/2026 a 16/11/2026 |
+| ⚠️ **9-AVALIAÇÃO FINAL** | **Apresentação do Planejamento Estratégico (Exposição Oral 15 min)** | 9-10 | **10/11/2026 a 24/11/2026** |
 ---
 
 ## 🛠️ Sprint 0: Organização da Documentação e Repositório
@@ -120,3 +126,15 @@ Aqui está o trecho atualizado do backlog incluindo a linha da **Planilha** com 
 
 * Se for um edital favorável $\rightarrow$ Oportunidade de alto impacto.
 * Se for uma exigência legal restritiva $\rightarrow$ Ameaça de alto impacto.
+
+## 🎯 Sprint 3: Diagnóstico Interno (Recursos e Capacidades)
+
+Diagnóstico Interno -  
+[questionario](https://github.com/YeddaMC/Gestao-Estrategica---GTI-6---2026.2/wiki/QUESTION%C3%81RIO-DE-DIAGN%C3%93STICO-E-ESTRAT%C3%89GIA-ORGANIZACIONAL)
+
+| Tarefa | Descrição | Evidência |
+| :--- | :--- | :---: |
+| **3.1 Levantamento de Recursos e Capacidades** | Listar os principais recursos físicos, financeiros, humanos e operacionais disponíveis na Associação. | [#13](https://github.com/users/YeddaMC/projects/13/views/1) |
+| **3.2 Mapeamento de Forças Internas (Pontos Fortes)** | Identificar de 2 a 3 aspectos internos em que a Associação se destaca ou possui bom desempenho. | [#14](https://github.com/users/YeddaMC/projects/13/views/1) |
+| **3.3 Mapeamento de Fraquezas Internas (Pontos Fracos)** | Identificar de 2 a 3 limitações, gargalos ou faltas de recursos internos que prejudicam as atividades. | [#15](https://github.com/users/YeddaMC/projects/13/views/1) |
+| **3.4 Planilha do Diagnóstico Interno** | Consolidar na planilha a listagem de recursos, forças e fraquezas levantadas. | [Planilha](https://github.com/YeddaMC/Gestao-Estrategica---GTI-6---2026.2/wiki) |
