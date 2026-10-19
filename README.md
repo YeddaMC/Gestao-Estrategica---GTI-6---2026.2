@@ -6,6 +6,8 @@
 
 **Equipe:** [Mary](https://github.com/Mary-Ana-Carvalhais-Carneiro/Gestao-Estrategica-GTI6_IFPR?utm_source=gemini), [Yedda](https://github.com/YeddaMC?utm_source=gemini)
 
+[Apresentação](https://yeddamc.github.io/Gestao-Estrategica---GTI-6---2026.2/)
+
 ## 📌 Cronograma Unificado de Atividades, Provas e Entregas
 
 | Data | ID / Nome da Atividade | Tipo | Link das Instruções | Link / Local de Entrega | Data de Entrega | Status |
