@@ -1,491 +1,636 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planejamento Estratégico - Unimed Curitiba (2026-2030)</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planejamento Estratégico - Associação Jardim Graciosa (IFPR)</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome para Ícones de Controle -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #0f172a;
+      color: #1e293b;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    /* Container Proporcional 16:9 do Slide */
+    .slide-viewport {
+      width: 100%;
+      max-width: 1120px;
+      aspect-ratio: 16 / 9;
+      background-color: #ffffff;
+      position: relative;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      user-select: none;
+    }
+
+    /* Faixa Lateral Verde Institucional do IFPR */
+    .green-sidebar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 100%;
+      background-color: #1b813e;
+      z-index: 20;
+    }
+
+    /* Barra de destaque vermelha abaixo dos títulos */
+    .title-red-bar {
+      width: 90px;
+      height: 4px;
+      background-color: #cc0000;
+      margin-top: 4px;
+      margin-bottom: 12px;
+    }
+
+    /* Logo em Caixa Pontilhada (Top-Right) */
+    .logo-dashed-box {
+      border: 1.5px dashed #1b813e;
+      border-radius: 8px;
+      color: #1b813e;
+      font-weight: 700;
+      font-size: 0.68rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 12px;
+      background-color: #fafafa;
+      letter-spacing: 0.05em;
+      min-width: 100px;
+      height: 38px;
+    }
+
+    /* Estilo de Tabelas do Template */
+    .ifpr-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.78rem;
+    }
+
+    .ifpr-table th {
+      background-color: #1b813e;
+      color: #ffffff;
+      padding: 8px 10px;
+      text-align: left;
+      font-weight: 700;
+      border: 1px solid #1b813e;
+    }
+
+    .ifpr-table td {
+      padding: 7px 10px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+      line-height: 1.35;
+      color: #334155;
+    }
+
+    .ifpr-table tr:nth-child(even) td {
+      background-color: #f4fbf6;
+    }
+
+    /* Quadros de Destaque Inferior */
+    .highlight-card {
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 0.78rem;
+      line-height: 1.4;
+    }
+
+    /* Estrutura dos Slides */
+    .slide-page {
+      display: none;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 24px 32px 14px 48px; /* Margem esquerda compensa a barra lateral */
+      position: relative;
+    }
+
+    .slide-page.active {
+      display: flex;
+      animation: fadeIn 0.25s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.995); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* SVG do Logo Oficial IFPR */
+    .ifpr-logo-svg {
+      height: 38px;
+      width: auto;
+    }
+
+    /* Logo de Associação Estilizada AMCE */
+    .association-logo-container {
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media print {
+      body { background: white; padding: 0; }
+      .no-print { display: none !important; }
+      .slide-viewport {
+        box-shadow: none;
+        max-width: 100%;
+        page-break-after: always;
+      }
+      .slide-page { display: flex !important; }
+    }
+  </style>
 </head>
 <body>
 
-    <header class="top-bar">
-        <span>Unimed Curitiba · Planejamento Estratégico 2026–2030</span>
-        <div class="slide-counter"><span id="current-slide">1</span> / <span id="total-slides">14</span></div>
-    </header>
+  <!-- Viewport Principal 16:9 -->
+  <div class="slide-viewport" id="slideViewport">
 
-    <main class="presentation-container">
-        <!-- SLIDE 1 -->
-        <section class="slide active" id="slide-1">
-            <div class="cover-content">
-                <span class="badge">UC GESTÃO ESTRATÉGICA (GTI 6) · IFPR CAMPUS PINHAIS</span>
-                <p class="subtitle">Professor Orientador: Anderson Ribeiro de Almeida</p>
-                <h1>Planejamento Estratégico<br><span>Organizacional</span></h1>
-                <p class="cycle">Ciclo 2026–2030</p>
-                
-                <div class="cover-grid">
-                    <div class="cover-box">
-                        <h3>ORGANIZAÇÃO ESTUDADA</h3>
-                        <p>Unimed Curitiba – Sociedade Cooperativa de Médicos</p>
-                    </div>
-                    <div class="cover-box">
-                        <h3>PROFESSOR ORIENTADOR</h3>
-                        <p>Anderson Ribeiro de Almeida</p>
-                    </div>
-                    <div class="cover-box">
-                        <h3>DISCIPLINA</h3>
-                        <p>Gestão Estratégica (GTI 6) – IFPR Campus Pinhais</p>
-                    </div>
-                    <div class="cover-box">
-                        <h3>EQUIPE DE DESENVOLVIMENTO</h3>
-                        <p> <p>Mary Ana Carvalhais Carneiro <br> Yedda Maria Carvalhais</p></p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Barra Verde Lateral em Todos os Slides -->
+    <div class="green-sidebar"></div>
 
-        <!-- SLIDE 2 -->
-        <section class="slide" id="slide-2">
-            <h2>DIREÇÃO ESTRATÉGICA</h2>
-            <h3>Direção Estratégica e Caracterização</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Diretriz</th>
-                        <th>Descrição / Definição Institucional</th>
-                        <th>Fonte / Evidência</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Caracterização</strong></td>
-                        <td>Cooperativa de saúde suplementar na RMC (+550 mil beneficiários e +4.600 médicos cooperados).</td>
-                        <td>Relatório GRI e Balanço Social</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Missão</strong></td>
-                        <td>Promover o trabalho do médico cooperado e oferecer soluções de excelência na atenção à saúde.</td>
-                        <td>Portal Institucional Unimed Curitiba</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Visão (2030)</strong></td>
-                        <td>Consolidar-se como líder e referência em inovação, sustentabilidade e eficiência na gestão de saúde.</td>
-                        <td>Diretrizes Estratégicas 2026–2030</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Valores</strong></td>
-                        <td>Cooperativismo, Ética, Transparência, Valorização do Cooperado, Sustentabilidade (ESG) e Foco no Cliente.</td>
-                        <td>Estatuto Social da Cooperativa</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    <!-- ================= SLIDE 1: CAPA ================= -->
+    <div class="slide-page active" id="slide-1">
+      <!-- Topo: Logo IFPR e Logo da Associação -->
+      <div class="flex justify-between items-start">
+        <div class="flex items-center gap-2">
+          <!-- Logo Vetorizado IFPR Ampliado -->
+          <svg class="ifpr-logo-svg" viewBox="0 0 230 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="13" height="13" rx="2" fill="#e53e3e"/>
+            <circle cx="6.5" cy="6.5" r="3" fill="#ffffff"/>
+            <rect x="16" y="0" width="13" height="13" rx="2" fill="#1b813e"/>
+            <rect x="0" y="16" width="13" height="13" rx="2" fill="#1b813e"/>
+            <rect x="16" y="16" width="13" height="13" rx="2" fill="#1b813e"/>
+            <rect x="0" y="32" width="13" height="13" rx="2" fill="#1b813e"/>
+            <rect x="16" y="32" width="13" height="13" rx="2" fill="#1b813e"/>
+            <rect x="0" y="48" width="13" height="13" rx="2" fill="#1b813e"/>
+            <text x="38" y="24" font-family="Inter, sans-serif" font-weight="900" font-size="17" fill="#1e293b">INSTITUTO FEDERAL</text>
+            <text x="38" y="39" font-family="Inter, sans-serif" font-weight="600" font-size="12" fill="#64748b">Paraná</text>
+            <line x1="135" y1="8" x2="135" y2="48" stroke="#cbd5e1" stroke-width="1.5"/>
+            <text x="143" y="24" font-family="Inter, sans-serif" font-weight="500" font-size="12" fill="#64748b">Campus</text>
+            <text x="143" y="39" font-family="Inter, sans-serif" font-weight="700" font-size="12" fill="#1e293b">Pinhais</text>
+          </svg>
+        </div>
 
-        <!-- SLIDE 3 -->
-        <section class="slide" id="slide-3">
-            <h2>DIAGNÓSTICO EXTERNO</h2>
-            <h3>Análise PESTEL</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dimensão / Fator</th>
-                        <th>Evidência / Fonte</th>
-                        <th>Impacto (1-5)</th>
-                        <th>Prob. (1-5)</th>
-                        <th>Cálculo</th>
-                        <th>Pontuação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>O1. Telemedicina e Canais Digitais</strong></td>
-                        <td>Resolução CFM nº 2.314/2022</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>5×5</td>
-                        <td><strong>25,0</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>O2. Expansão da Atenção Primária (APS)</strong></td>
-                        <td>Resoluções RN 452/506 da ANS</td>
-                        <td>4</td>
-                        <td>4</td>
-                        <td>4×4</td>
-                        <td><strong>16,0</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>A1. Elevação do Custo Assistencial (VCMH)</strong></td>
-                        <td>Relatório Anual do IESS</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>5×5</td>
-                        <td><strong>25,0</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>A2. Cibersegurança e LGPD na Saúde</strong></td>
-                        <td>Relatórios ANPD / CSIRT</td>
-                        <td>5</td>
-                        <td>3</td>
-                        <td>5×3</td>
-                        <td><strong>15,0</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <!-- Logo Emblema da Associação AMCE -->
+        <div class="association-logo-container w-28 h-28 p-1 bg-white border border-slate-200 shadow-sm rounded-full flex items-center justify-center">
+          <svg viewBox="0 0 200 200" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="textCircle" d="M 25, 100 A 75,75 0 1,1 175,100 A 75,75 0 1,1 25,100" />
+            </defs>
+            <circle cx="100" cy="100" r="96" fill="#1e293b" />
+            <circle cx="100" cy="100" r="88" fill="#ffffff" stroke="#1b813e" stroke-width="4" />
+            <text font-size="9" font-family="Inter, sans-serif" font-weight="800" fill="#1b813e">
+              <textPath href="#textCircle" startOffset="50%" text-anchor="middle">
+                ASSOCIAÇÃO DOS MORADORES DO CONDOMÍNIO DE PROTEÇÃO AMBIENTAL
+              </textPath>
+            </text>
+            <!-- Silhouette Mapa Terreno -->
+            <path d="M 65 65 L 140 50 L 155 120 L 125 155 L 75 145 L 50 110 Z" fill="none" stroke="#1b813e" stroke-width="6" stroke-linejoin="round" />
+            <!-- Sigla AMCE Central -->
+            <text x="100" y="95" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="22" fill="#1b813e">AMCE</text>
+            <text x="100" y="112" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="10" fill="#1b813e">Chácaras Graciosa</text>
+            <!-- Círculo Interno Agroecológico -->
+            <circle cx="100" cy="138" r="16" fill="#1b813e" />
+            <path d="M 94 138 C 94 130, 100 126, 106 130 C 106 138, 100 142, 94 138 Z" fill="#ffffff" />
+            <text x="100" y="180" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="10" fill="#1b813e">Pinhais-PR</text>
+          </svg>
+        </div>
+      </div>
 
-        <!-- SLIDE 4 -->
-        <section class="slide" id="slide-4">
-            <h2>DIAGNÓSTICO INTERNO</h2>
-            <h3>Forças e Fraquezas</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tipo / Fator Interno</th>
-                        <th>Evidência / Fonte</th>
-                        <th>Importância (1-5)</th>
-                        <th>Intensidade (1-5)</th>
-                        <th>Cálculo</th>
-                        <th>Pontuação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>F1. Liderança de Marca e Rede Própria</strong></td>
-                        <td>Prêmio Top of Mind Paraná / Balanço</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>5×5</td>
-                        <td><strong>25,0</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>F2. Acreditação e Governança</strong></td>
-                        <td>Acreditação RN 452 ANS / GRI</td>
-                        <td>5</td>
-                        <td>4</td>
-                        <td>5×4</td>
-                        <td><strong>20,0</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Fr1. Dependência de Leitos de Terceiros</strong></td>
-                        <td>Demonstrações Financeiras DRE</td>
-                        <td>5</td>
-                        <td>4</td>
-                        <td>5×4</td>
-                        <td><strong>20,0</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Fr2. Burocracia e Prontuário Fragmentado</strong></td>
-                        <td>Relatório de Ouvidoria / SAC</td>
-                        <td>4</td>
-                        <td>3</td>
-                        <td>4×3</td>
-                        <td><strong>12,0</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+      <!-- Centro: Título do Trabalho -->
+      <div class="my-auto pr-8">
+        <h3 class="text-[#1b813e] font-extrabold text-xs uppercase tracking-widest mb-1">
+          RELATÓRIO DE PLANEJAMENTO ESTRATÉGICO
+        </h3>
+        <h1 class="text-3xl font-black text-slate-900 leading-tight mb-3 tracking-tight">
+          Associação dos Moradores do Condomínio de Proteção Ambiental Jardim Graciosa
+        </h1>
+        <p class="text-slate-600 text-sm font-medium leading-relaxed max-w-xl">
+          Síntese analítica do diagnóstico, das escolhas estratégicas e do plano de ação
+        </p>
+      </div>
 
-        <!-- SLIDE 5 -->
-        <section class="slide" id="slide-5">
-            <h2>CRUZAMENTO ESTRATÉGICO</h2>
-            <h3>Matriz SWOT / TOWS</h3>
-            <div class="swot-grid">
-                <div class="swot-header-corner"></div>
-                <div class="swot-header-col">
-                    <strong>OPORTUNIDADES (EXTERNAS)</strong>
-                    <span>• O1: Telemedicina & App<br>• O2: Atenção Primária (APS)</span>
-                </div>
-                <div class="swot-header-col">
-                    <strong>AMEAÇAS (EXTERNAS)</strong>
-                    <span>• A1: Inflação Médica (VCMH)<br>• A2: Riscos de LGPD/Cibersegurança</span>
-                </div>
-                
-                <div class="swot-header-row">
-                    <strong>FORÇAS (INTERNAS)</strong>
-                    <span>• F1: Marca e Rede<br>• F2: Governança</span>
-                </div>
-                <div class="swot-cell">
-                    <span class="swot-tag">OFENSIVAS (F × O)</span>
-                    <p>Expandir carteira de clientes corporativos ofertando Telemedicina e APS com a credibilidade da marca.</p>
-                </div>
-                <div class="swot-cell">
-                    <span class="swot-tag">PROTEÇÃO (F × A)</span>
-                    <p>Fortalecer a governança de TI e compliance de dados para blindar a rede contra incidentes de LGPD.</p>
-                </div>
+      <!-- Rodapé Capa -->
+      <div class="border-t border-slate-200 pt-3 flex justify-between items-end text-[11px] text-slate-600">
+        <div class="space-y-0.5">
+          <p><strong class="text-slate-800">[NOMES DOS INTEGRANTES]:</strong> Mary Ana e Yedda</p>
+          <p><strong class="text-slate-800">[CURSO E DISCIPLINA]:</strong> Tecnólogo em Gestão da TI · Planejamento Estratégico</p>
+          <p><strong class="text-slate-800">[MUNICÍPIO · ANO]:</strong> Pinhais · 2026</p>
+        </div>
+        <div class="text-xs font-mono text-slate-400 font-semibold">1/8</div>
+      </div>
+    </div>
 
-                <div class="swot-header-row">
-                    <strong>FRAQUEZAS (INTERNAS)</strong>
-                    <span>• Fr1: Hospitais Terceiros<br>• Fr2: Burocracia Guias</span>
-                </div>
-                <div class="swot-cell">
-                    <span class="swot-tag">DESBUROCRATIZAÇÃO (Fr × O)</span>
-                    <p>Implementar IA no aplicativo para autorização instantânea e unificação dos prontuários digitais.</p>
-                </div>
-                <div class="swot-cell">
-                    <span class="swot-tag">SOBREVIVÊNCIA (Fr × A)</span>
-                    <p>Reestruturar a gestão de sinistralidade e coordenação de crônicos para conter custos de internação terceirizada.</p>
-                </div>
-            </div>
-        </section>
+    <!-- ================= SLIDE 2: ORGANIZAÇÃO E ESCOPO ================= -->
+    <div class="slide-page" id="slide-2">
+      <div class="flex justify-between items-start">
+        <div>
+          <h2 class="text-2xl font-black text-slate-900 tracking-tight">Organização e escopo da análise</h2>
+          <div class="title-red-bar"></div>
+        </div>
+        <!-- Logo AMCE Compacta Topo -->
+        <div class="w-12 h-12">
+          <svg viewBox="0 0 200 200" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="90" fill="#ffffff" stroke="#1b813e" stroke-width="8" />
+            <path d="M 65 65 L 140 50 L 155 120 L 125 155 L 75 145 L 50 110 Z" fill="none" stroke="#1b813e" stroke-width="8" />
+            <text x="100" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="32" fill="#1b813e">AMCE</text>
+          </svg>
+        </div>
+      </div>
 
-        <!-- SLIDE 6 -->
-        <section class="slide" id="slide-6">
-            <h2>DESDOBRAMENTO · OBJETIVO ESTRATÉGICO 1 DE 4</h2>
-            <h3>Controle de Sinistralidade</h3>
-            <p class="objective-desc">Conter o crescimento das despesas assistenciais (consultas, exames e internações) para que fiquem dentro da arrecadação das mensalidades.</p>
-            
-            <div class="card-grid">
-                <div class="card">
-                    <h4>ESTRATÉGIA BASE · FATORES DA MATRIZ SWOT/TOWS</h4>
-                    <p><strong>Fraqueza 1 (Fr1):</strong> dependência de leitos de terceiros<br><strong>Ameaça 1 (A1):</strong> elevação do custo assistencial (inflação médica)</p>
-                    <p class="card-text">Como os custos de internações em hospitais terceiros podem subir, a estratégia é coordenar o cuidado de pacientes crônicos e reduzir internações evitáveis.</p>
-                </div>
-                <div class="card highlight">
-                    <h4>INDICADOR-CHAVE (KPI) & META ATÉ 2028</h4>
-                    <p><strong>Taxa de Sinistralidade Geral (%)</strong><br>Despesa assistencial ÷ receita do plano × 100.</p>
-                    <div class="meta-box">
-                        <span>Meta: <strong>Manter ≤ 82%</strong></span>
-                        <small>A cada R$ 100 arrecadados, até R$ 82 em despesas médicas.</small>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="space-y-5 my-auto text-xs text-slate-700 leading-relaxed pr-4">
+    <!-- Rodapé Padrão IFPR Ampliado -->
+      <div class="border-t border-slate-200 pt-2 flex justify-between items-center text-[10px] text-slate-500">
+        <div class="flex items-center gap-2">
+          <svg class="h-6 w-auto" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="10" height="10" rx="1.5" fill="#e53e3e"/>
+            <rect x="12" y="0" width="10" height="10" rx="1.5" fill="#1b813e"/>
+            <rect x="0" y="12" width="10" height="10" rx="1.5" fill="#1b813e"/>
+            <rect x="12" y="12" width="10" height="10" rx="1.5" fill="#1b813e"/>
+            <text x="28" y="20" font-family="Inter" font-weight="800" font-size="12" fill="#1e293b">INSTITUTO FEDERAL | Pinhais</text>
+          </svg>
+        </div>
+        <span class="text-slate-400">TEMPLATE · substitua os campos entre colchetes e exclua as orientações</span>
+        <span class="font-mono text-slate-500 font-bold">· 2/8</span>
+      </div>
+    </div>
 
-        <!-- SLIDE 7 -->
-        <section class="slide" id="slide-7">
-            <h2>DESDOBRAMENTO · OBJETIVO ESTRATÉGICO 2 DE 4</h2>
-            <h3>Desburocratização Digital</h3>
-            <p class="objective-desc">Reduzir a papelada na autorização de guias, usando o aplicativo e a inteligência artificial para agilizar a liberação do atendimento.</p>
-            
-            <div class="card-grid">
-                <div class="card">
-                    <h4>ESTRATÉGIA BASE · FATORES DA MATRIZ SWOT/TOWS</h4>
-                    <p><strong>Fraqueza 2 (Fr2):</strong> burocracia e prontuário fragmentado<br><strong>Oportunidade 1 (O1):</strong> telemedicina e canais digitais</p>
-                    <p class="card-text">Aproveitar os canais digitais para automatizar a autorização de guias e integrar os prontuários, reduzindo etapas manuais e a necessidade de formulários impressos.</p>
-                </div>
-                <div class="card highlight">
-                    <h4>INDICADOR-CHAVE (KPI) & META ATÉ 2028</h4>
-                    <p><strong>Tempo de Liberação no App</strong><br>Tempo entre o envio da guia e a autorização; acompanhar também o percentual liberado em até 2 minutos.</p>
-                    <div class="meta-box">
-                        <span>Meta: <strong>≤ 2 min para 90% das guias</strong></span>
-                        <small>9 em cada 10 guias liberadas em até 2 minutos.</small>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- ================= SLIDE 3: MÉTODO, FONTES E CRITÉRIOS ================= -->
+    <div class="slide-page" id="slide-3">
+      <div class="flex justify-between items-start">
+        <div>
+          <h2 class="text-2xl font-black text-slate-900 tracking-tight">Método, fontes e critérios de análise</h2>
+          <div class="title-red-bar"></div>
+        </div>
+        <div class="w-12 h-12">
+          <svg viewBox="0 0 200 200" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="90" fill="#ffffff" stroke="#1b813e" stroke-width="8" />
+            <path d="M 65 65 L 140 50 L 155 120 L 125 155 L 75 145 L 50 110 Z" fill="none" stroke="#1b813e" stroke-width="8" />
+            <text x="100" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="32" fill="#1b813e">AMCE</text>
+          </svg>
+        </div>
+      </div>
 
-        <!-- SLIDE 8 -->
-        <section class="slide" id="slide-8">
-            <h2>DESDOBRAMENTO · OBJETIVO ESTRATÉGICO 3 DE 4</h2>
-            <h3>Compliance e LGPD</h3>
-            <p class="objective-desc">Garantir que os dados dos beneficiários sejam tratados de forma segura e legal, com equipe treinada e prevenção de vazamentos e multas.</p>
-            
-            <div class="card-grid">
-                <div class="card">
-                    <h4>ESTRATÉGIA BASE · FATORES DA MATRIZ SWOT/TOWS</h4>
-                    <p><strong>Força 2 (F2):</strong> acreditação e governança<br><strong>Ameaça 2 (A2):</strong> riscos de cibersegurança e LGPD na saúde</p>
-                    <p class="card-text">Usar a estrutura de governança e os padrões de qualidade para fortalecer a proteção de dados, com capacitação dos colaboradores e auditorias de TI e LGPD.</p>
-                </div>
-                <div class="card highlight">
-                    <h4>INDICADOR-CHAVE (KPI) & META ATÉ 2028</h4>
-                    <p><strong>Equipe Treinada e Incidentes de Dados</strong><br>Percentual de colaboradores capacitados e número de incidentes de dados.</p>
-                    <div class="meta-box">
-                        <span>Meta: <strong>100% treinados e 0 incidentes</strong></span>
-                        <small>Nenhum colaborador sem capacitação e nenhuma ocorrência.</small>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- Rodapé Padrão IFPR -->
+      <div class="border-t border-slate-200 pt-2 flex justify-between items-center text-[10px] text-slate-500">
+        <div class="flex items-center gap-2">
+          <svg class="h-4 w-auto" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="10" height="10" rx="1.5" fill="#e53e3e"/>
+            <rect x="12" y="0" width="10" height="10" rx="1.5" fill="#1b813e"/>
+            <rect x="0" y="12" width="10" height="10" rx="1.5" fill="#1b813e"/>
+            <rect x="12" y="12" width="10" height="10" rx="1.5" fill="#1b813e"/>
+            <text x="28" y="20" font-family="Inter" font-weight="800" font-size="12" fill="#1e293b">INSTITUTO FEDERAL | Pinhais</text>
+          </svg>
+        </div>
+        <span class="text-slate-400">TEMPLATE · substitua os campos entre colchetes e exclua as orientações</span>
+        <span class="font-mono text-slate-500 font-bold">· 2/8</span>
+      </div>
+    </div>
 
-        <!-- SLIDE 9 -->
-        <section class="slide" id="slide-9">
-            <h2>DESDOBRAMENTO · OBJETIVO ESTRATÉGICO 4 DE 4</h2>
-            <h3>Satisfação e Qualidade</h3>
-            <p class="objective-desc">Elevar a nota de qualidade do plano junto à ANS e acompanhar a experiência real de quem usa a Unimed Curitiba.</p>
-            
-            <div class="card-grid">
-                <div class="card">
-                    <h4>ESTRATÉGIA BASE · FATORES DA MATRIZ SWOT/TOWS</h4>
-                    <p><strong>Força 1 (F1):</strong> liderança de marca e rede própria<br><strong>Oportunidade 1 (O1):</strong> telemedicina e canais digitais</p>
-                    <p class="card-text">Combinar a credibilidade da marca e a rede própria com o atendimento digital para ampliar o acesso e melhorar a qualidade do cuidado e a experiência do beneficiário.</p>
-                </div>
-                <div class="card highlight">
-                    <h4>INDICADOR-CHAVE (KPI) & META ATÉ 2028</h4>
-                    <p><strong>Índice IDSS da ANS</strong><br>Nota de qualidade das operadoras, de 0 a 1; avalia diferentes dimensões, não apenas a satisfação.</p>
-                    <div class="meta-box">
-                        <span>Meta: <strong>Faixa Máxima (>0,90)</strong></span>
-                        <small>Entrar no grupo de melhor avaliação da agência.</small>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- ================= SLIDE 3: MÉTODO, FONTES E CRITÉRIOS ================= -->
+    <div class="slide-page" id="slide-3">
+      <div class="flex justify-between items-start">
+        <div>
+          <h2 class="text-2xl font-black text-slate-900 tracking-tight">Método, fontes e critérios de análise</h2>
+          <div class="title-red-bar"></div>
+        </div>
+        <div class="logo-dashed-box">LOGO</div>
+      </div>
 
-        <!-- SLIDE 10 -->
-        <section class="slide" id="slide-10">
-            <h2>EXECUÇÃO</h2>
-            <h3>Planos de Ação 5W2H</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Ação (What)</th>
-                        <th>Responsável (Who)</th>
-                        <th>Prazo (When)</th>
-                        <th>Local (Where)</th>
-                        <th>Por que (Why)</th>
-                        <th>Orçamento (How Much)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>1. Núcleos de APS</strong></td>
-                        <td>Gerência Medicina Preventiva</td>
-                        <td>Jan/27 a Dez/27</td>
-                        <td>Unidades RMC</td>
-                        <td>Reduzir internações evitáveis</td>
-                        <td>R$ 1.200.000,00</td>
-                    </tr>
-                    <tr>
-                        <td><strong>2. Automação IA no App</strong></td>
-                        <td>Gerência de TI e Inovação</td>
-                        <td>Mar/27 a Set/27</td>
-                        <td>App / Canais Digitais</td>
-                        <td>Agilizar autorização de guias</td>
-                        <td>R$ 450.000,00</td>
-                    </tr>
-                    <tr>
-                        <td><strong>3. Auditoria LGPD/TI</strong></td>
-                        <td>Encarregado de Dados (DPO)</td>
-                        <td>Fev/27 a Nov/27</td>
-                        <td>Sede e Rede Conectada</td>
-                        <td>Prevenir vazamentos e multas</td>
-                        <td>R$ 180.000,00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+      <div class="grid grid-cols-3 gap-4 my-auto">
+        <div class="bg-slate-50 border border-slate-200 rounded-md p-3.5 space-y-2">
+          <div class="flex items-center gap-2 text-[#1b813e] font-bold text-xs uppercase border-b border-slate-200 pb-1.5">
+            <i class="fa-solid fa-list-check"></i>
+            <span>Coleta de Dados</span>
+          </div>
+          <p class="text-[11px] text-slate-600 leading-relaxed">
+            Questionário estruturado aplicado à presidência, reuniões técnicas e análise documental (atas cartoriais, balancetes do sistema ASAAS e estatuto social).
+          </p>
+        </div>
 
-        <!-- SLIDE 11 -->
-        <section class="slide" id="slide-11">
-            <h2>CRONOGRAMA</h2>
-            <h3></h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Etapa do Projeto</th>
-                        <th>Período Previsto</th>
-                        <th>Principais Atividades / Marcos</th>
-                        <th>Justificativa de Viabilidade</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Diagnóstico & Planejamento </strong></td>
-                        <td>Ano de 2026</td>
-                        <td>Análise, validação e submissão.</td>
-                        <td>Estudo e validação institucional.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Aprovação Orçamentária</strong></td>
-                        <td>Nov/26 a Dez/26</td>
-                        <td>Deliberação e aprovação na Assembleia.</td>
-                        <td>Fechamento do exercício fiscal da cooperativa.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Execução dos Planos 5W2H</strong></td>
-                        <td>Fev/27 em diante</td>
-                        <td>Início das contratações, desenvolvimentos e treinamentos.</td>
-                        <td>Liberação de verbas e encerramento de recessos.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <div class="bg-slate-50 border border-slate-200 rounded-md p-3.5 space-y-2">
+          <div class="flex items-center gap-2 text-[#1b813e] font-bold text-xs uppercase border-b border-slate-200 pb-1.5">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <span>Fontes Externas</span>
+          </div>
+          <p class="text-[11px] text-slate-600 leading-relaxed">
+            Jurisprudências da Comissão de Conflitos Fundiários do TJ-PR, relatórios do Conselho Gestor de Mananciais (CGM/RMC), Brasil de Fato e monografia UFPR.
+          </p>
+        </div>
 
-        <!-- SLIDE 12 -->
-        <section class="slide" id="slide-12">
-            <h2>CONTROLE</h2>
-            <h3>Monitoramento e Governança</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nível de Governança</th>
-                        <th>Frequência</th>
-                        <th>Participantes</th>
-                        <th>Foco do Acompanhamento</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Operacional</strong></td>
-                        <td>Mensal</td>
-                        <td>Gerentes de Projetos</td>
-                        <td>Progresso físico, prazos e custos do 5W2H.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Tático</strong></td>
-                        <td>Trimestral</td>
-                        <td>Diretoria Executiva</td>
-                        <td>Atingimento das Metas dos KPIs.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Estratégico</strong></td>
-                        <td>Anual</td>
-                        <td>Conselho de Administração</td>
-                        <td>Revisão geral e prestação de contas na Assembleia.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <div class="bg-slate-50 border border-slate-200 rounded-md p-3.5 space-y-2">
+          <div class="flex items-center gap-2 text-[#1b813e] font-bold text-xs uppercase border-b border-slate-200 pb-1.5">
+            <i class="fa-solid fa-calculator"></i>
+            <span>Critérios</span>
+          </div>
+          <p class="text-[11px] text-slate-600 leading-relaxed">
+            Fatores externos pontuados por <strong class="text-slate-800">Impacto x Probabilidade</strong>. Fatores internos avaliados por intensidade e evidência formal.
+          </p>
+        </div>
+      </div>
 
-        <!-- SLIDE 13 -->
-        <section class="slide" id="slide-13">
-            <h2>BIBLIOGRAFIA</h2>
-            <h3>Referências e Fontes Consultadas</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Categoria</th>
-                        <th>Ferramenta / Documento Fonte</th>
-                        <th>Origem Institucional / Autor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Ferramentas de Gestão</strong></td>
-                        <td>PESTEL, Matriz Interna, SWOT/TOWS, KPIs, 5W2H</td>
-                        <td>Disciplina Gestão Estratégica – Prof. Anderson (IFPR)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Dados da Cooperativa</strong></td>
-                        <td>Relatório de Sustentabilidade (GRI) e DRE Auditada</td>
-                        <td>Unimed Curitiba – Portal Transparência</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Regulação e Setor</strong></td>
-                        <td>Resoluções Normativas RN 452/506, Res. CFM 2.314/22</td>
-                        <td>ANS, CFM, IESS e IBGE</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+      <div class="border-t border-slate-200 pt-2 flex justify-between items-center text-[10px] text-slate-500">
+        <span class="font-semibold text-slate-600">INSTITUTO FEDERAL PARANÁ</span>
+        <span class="text-slate-400">TEMPLATE · substitua os campos entre colchetes e exclua as orientações</span>
+        <span class="font-mono text-slate-500 font-bold">1 min · 3/8</span>
+      </div>
+    </div>
 
-        <!-- SLIDE 14 -->
-        <section class="slide" id="slide-14">
-            <div class="end-content">
-                <h1>Obrigado!</h1>
-                <p>Espaço aberto para perguntas, considerações da banca e do professor.</p>
-                <div class="team-box">
-                    <h3>INTEGRANTES DA EQUIPE:</h3>
-                    <p>Mary Ana Carvalhais Carneiro <br> Yedda Maria Carvalhais</p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- ================= SLIDE 4: DIAGNÓSTICO EXTERNO ================= -->
+    <div class="slide-page" id="slide-4">
+      <div class="flex justify-between items-start">
+        <div>
+          <h2 class="text-2xl font-black text-slate-900 tracking-tight">Diagnóstico externo: fatores prioritários</h2>
+          <div class="title-red-bar"></div>
+        </div>
+        <div class="w-12 h-12">
+          <svg viewBox="0 0 200 200" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="90" fill="#ffffff" stroke="#1b813e" stroke-width="8" />
+            <path d="M 65 65 L 140 50 L 155 120 L 125 155 L 75 145 L 50 110 Z" fill="none" stroke="#1b813e" stroke-width="8" />
+            <text x="100" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="32" fill="#1b813e">AMCE</text>
+          </svg>
+        </div>
+      </div>
+    <!-- ================= SLIDE 5: DIAGNÓSTICO INTERNO ================= -->
+    <div class="slide-page" id="slide-5">
+      <div class="flex justify-between items-start">
+        <div>
+          <h2 class="text-2xl font-black text-slate-900 tracking-tight">Diagnóstico interno: capacidades e fragilidades</h2>
+          <div class="title-red-bar"></div>
+        </div>
+        <div class="w-12 h-12">
+          <svg viewBox="0 0 200 200" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="90" fill="#ffffff" stroke="#1b813e" stroke-width="8" />
+            <path d="M 65 65 L 140 50 L 155 120 L 125 155 L 75 145 L 50 110 Z" fill="none" stroke="#1b813e" stroke-width="8" />
+            <text x="100" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="32" fill="#1b813e">AMCE</text>
+          </svg>
+        </div>
+      </div>
+    <!-- ================= SLIDE 6: SWOT E POSICIONAMENTO ================= -->
+    <div class="slide-page" id="slide-6">
+      <div class="flex justify-between items-start">
+        <div>
+          <h2 class="text-2xl font-black text-slate-900 tracking-tight">SWOT e posicionamento estratégico</h2>
+          <div class="title-red-bar"></div>
+        </div>
+        <div class="w-12 h-12">
+          <svg viewBox="0 0 200 200" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="90" fill="#ffffff" stroke="#1b813e" stroke-width="8" />
+            <path d="M 65 65 L 140 50 L 155 120 L 125 155 L 75 145 L 50 110 Z" fill="none" stroke="#1b813e" stroke-width="8" />
+            <text x="100" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="32" fill="#1b813e">AMCE</text>
+          </svg>
+        </div>
+      </div>
+    </div>
 
-    <footer class="nav-bar">
-        <button id="prev-btn" class="nav-btn">❮ Anterior</button>
-        <span class="nav-hint">Use as setas do teclado ou os botões para navegar</span>
-        <button id="next-btn" class="nav-btn">Próximo ❯</button>
-    </footer>
+    <!-- ================= SLIDE 7: ESTRATÉGIAS E OBJETIVOS ================= -->
+    <div class="slide-page" id="slide-7">
+      <div class="flex justify-between items-start">
+        <div>
+          <h2 class="text-2xl font-black text-slate-900 tracking-tight">Estratégias e objetivos prioritários</h2>
+          <div class="title-red-bar"></div>
+        </div>
+        <div class="w-12 h-12">
+          <svg viewBox="0 0 200 200" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="90" fill="#ffffff" stroke="#1b813e" stroke-width="8" />
+            <path d="M 65 65 L 140 50 L 155 120 L 125 155 L 75 145 L 50 110 Z" fill="none" stroke="#1b813e" stroke-width="8" />
+            <text x="100" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="32" fill="#1b813e">AMCE</text>
+          </svg>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
+      <p class="text-[11px] text-slate-500 -mt-2 mb-1">
+        Explicite a relação entre o diagnóstico e cada escolha estratégica. Recomenda-se apresentar até três estratégias centrais.
+      </p>
+
+      <div class="overflow-x-auto my-auto">
+        <table class="ifpr-table">
+          <thead>
+            <tr>
+              <th style="width: 22%;">Estratégia</th>
+              <th style="width: 18%;">Fatores respondidos</th>
+              <th style="width: 28%;">Objetivo</th>
+              <th style="width: 32%;">Justificativa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-bold text-slate-900">E1 - Saneamento Financeiro</td>
+              <td class="font-semibold text-slate-700">FR1, A2</td>
+              <td>Elevar a adimplência para &ge; 80% até Dez/2027</td>
+              <td>Garantir receita estável via régua de cobrança ASAAS e recadastramento.</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-slate-900">E2 - Economia Solidária</td>
+              <td class="font-semibold text-slate-700">F3, FR2</td>
+              <td>Criar catálogo digital do Coletivo de Mulheres até Jun/2027</td>
+              <td>Viabilizar vendas diretas online e fortalecer a qualificação em feiras e editais.</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-slate-900">E3 - Presença Digital</td>
+              <td class="font-semibold text-slate-700">FR3, COM</td>
+              <td>Estruturar o site institucional até Dez/2027</td>
+              <td>Garantir transparência, autonomia na gestão de canais e comunicação oficial.</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-slate-900">E4 - Captação Cultural</td>
+              <td class="font-semibold text-slate-700">O2</td>
+              <td>Submeter 2 projetos/ano em editais (PNAB)</td>
+              <td>Captação a fundo perdido sem investimento próprio elevado.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="text-center font-bold text-[#1b813e] text-[10.5px] my-1 tracking-wide">
+        Critério de consistência: cada objetivo deve materializar uma estratégia, e cada estratégia deve responder a fatores sustentados por evidências.
+      </div>
+
+      <div class="border-t border-slate-200 pt-1.5 flex justify-between items-center text-[10px] text-slate-500">
+        <span class="font-semibold text-slate-600">INSTITUTO FEDERAL PARANÁ</span>
+        <span class="text-slate-400">TEMPLATE · substitua os campos entre colchetes e exclua as orientações</span>
+        <span class="font-mono text-slate-500 font-bold">1 min 30 s · 7/8</span>
+      </div>
+    </div>
+
+    <!-- ================= SLIDE 8: PLANO DE AÇÃO ================= -->
+    <div class="slide-page" id="slide-8">
+      <div class="flex justify-between items-start">
+        <div>
+          <h2 class="text-2xl font-black text-slate-900 tracking-tight">Plano de ação</h2>
+          <div class="title-red-bar"></div>
+        </div>
+        <div class="w-12 h-12">
+          <svg viewBox="0 0 200 200" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="90" fill="#ffffff" stroke="#1b813e" stroke-width="8" />
+            <path d="M 65 65 L 140 50 L 155 120 L 125 155 L 75 145 L 50 110 Z" fill="none" stroke="#1b813e" stroke-width="8" />
+            <text x="100" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="32" fill="#1b813e">AMCE</text>
+          </svg>
+        </div>
+      </div>
+
+      <h3 class="text-[#1b813e] font-bold uppercase text-[11px] -mt-2 mb-1 tracking-wider">AÇÕES PRIORITÁRIAS</h3>
+
+      <div class="overflow-x-auto my-auto">
+        <table class="ifpr-table">
+          <thead>
+            <tr>
+              <th style="width: 32%;">Ação</th>
+              <th style="width: 24%;">Responsável</th>
+              <th style="width: 18%;">Prazo</th>
+              <th style="width: 26%;">Indicador</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-semibold text-slate-800">Recadastramento e Régua de Cobrança ASAAS</td>
+              <td>Tesouraria e Diretoria Executiva</td>
+              <td>Mar–Dez/2027</td>
+              <td>Relatório mensal ASAAS (Adimplência &ge; 80%)</td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-slate-800">Catalogação de Produtos e Portfólio Digital</td>
+              <td>Coletivo de Mulheres</td>
+              <td>Jan–Jun/2027</td>
+              <td>Catálogo digital em PDF/Web publicado</td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-slate-800">Estruturação e Lançamento do Site Institucional</td>
+              <td>Diretoria Executiva</td>
+              <td>Mar–Dez/2027</td>
+              <td>Site oficial publicado e no ar</td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-slate-800">Submissão de Projetos em Editais Públicos (PNAB)</td>
+              <td>Presidente (Raquel)</td>
+              <td>Fluxo anual 2027</td>
+              <td>Protocolo de propostas em editais públicos</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="text-center text-slate-600 text-[11px] my-1">
+        <span class="italic text-slate-400">Conclua com uma síntese das evidências e das decisões. Evite repetir todo o diagnóstico.</span>
+        <br>
+        <span class="font-semibold text-slate-800">
+          O planejamento estruturado viabiliza a transição da sobrevivência para o fortalecimento institucional, unindo saneamento financeiro, presença digital e autonomia do Coletivo de Mulheres até 2031.
+        </span>
+      </div>
+
+      <div class="border-t border-slate-200 pt-1.5 flex justify-between items-center text-[10px] text-slate-500">
+        <span class="font-semibold text-slate-600">INSTITUTO FEDERAL PARANÁ</span>
+        <span class="text-slate-400">TEMPLATE · substitua os campos entre colchetes e exclua as orientações</span>
+        <span class="font-mono text-slate-500 font-bold">1 min 40 s · 8/8</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Barra de Navegação Externa -->
+  <div class="no-print mt-5 flex items-center justify-between w-full max-w-[1120px] bg-slate-900 text-white p-3 rounded-lg shadow-xl border border-slate-800">
+    <div class="flex items-center gap-3">
+      <button id="btnPrev" onclick="changeSlide(-1)" class="bg-[#1b813e] hover:bg-green-700 text-white font-bold px-4 py-2 rounded text-xs transition flex items-center gap-2">
+        <i class="fa-solid fa-arrow-left"></i> Anterior
+      </button>
+      <button id="btnNext" onclick="changeSlide(1)" class="bg-[#1b813e] hover:bg-green-700 text-white font-bold px-4 py-2 rounded text-xs transition flex items-center gap-2">
+        Próximo <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <div class="text-xs font-medium text-slate-300">
+      Slide <span id="currentSlideNum" class="text-green-400 font-bold">1</span> de <span id="totalSlidesNum">8</span>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <button onclick="window.print()" class="bg-slate-800 hover:bg-slate-700 text-white text-xs px-3 py-2 rounded transition flex items-center gap-1.5 border border-slate-700">
+        <i class="fa-solid fa-print"></i> Imprimir / Salvar PDF
+      </button>
+    </div>
+  </div>
+
+  <p class="no-print text-slate-400 text-xs mt-2">
+    Utilize as setas do teclado (<strong>&larr;</strong> / <strong>&rarr;</strong>) para navegar na apresentação.
+  </p>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 8;
+
+    function showSlide(slideNum) {
+      if (slideNum < 1) slideNum = 1;
+      if (slideNum > totalSlides) slideNum = totalSlides;
+
+      currentSlide = slideNum;
+
+      for (let i = 1; i <= totalSlides; i++) {
+        const slide = document.getElementById(`slide-${i}`);
+        if (slide) slide.classList.remove('active');
+      }
+
+      const activeSlide = document.getElementById(`slide-${currentSlide}`);
+      if (activeSlide) activeSlide.classList.add('active');
+
+      document.getElementById('currentSlideNum').innerText = currentSlide;
+
+      const btnPrev = document.getElementById('btnPrev');
+      const btnNext = document.getElementById('btnNext');
+
+      if (currentSlide === 1) {
+        btnPrev.classList.add('opacity-50', 'cursor-not-allowed');
+      } else {
+        btnPrev.classList.remove('opacity-50', 'cursor-not-allowed');
+      }
+
+      if (currentSlide === totalSlides) {
+        btnNext.classList.add('opacity-50', 'cursor-not-allowed');
+      } else {
+        btnNext.classList.remove('opacity-50', 'cursor-not-allowed');
+      }
+    }
+
+    function changeSlide(direction) {
+      showSlide(currentSlide + direction);
+    }
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'ArrowLeft') {
+        changeSlide(-1);
+      } else if (event.key === 'ArrowRight' || event.key === ' ') {
+        changeSlide(1);
+      }
+    });
+
+    window.onload = function() {
+      showSlide(1);
+    };
+  </script>
 </body>
 </html>
